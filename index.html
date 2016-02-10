@@ -2,8 +2,39 @@
 <html>
 <head>
 	<title>Listo</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
 	</head>
 <body>
+	<form id="newTaskForm">
+		<label>New Item</label>
+		<input id ='newItemInput' placeholder="new task">
+		<button id ='saveNewItem'>Save</button>
+		<button id = 'cancel'>Cancel</button>
+	</form>
+
+	<div class='new-item-header'>
+		<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+	</div>
+
+	<div id='newList'>
+		New List
+	</div>
+
+	<div class="panel">
+		In Progress
+	<ul class = 'list-group' id ="currentList"></ul>
+	</div>
+
+	<div class="panel">
+		Archived
+	<ul class="list-group" id="archivedList"></ul>
+	</div>
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="app/scripts/app.js"></script>
 </body>
